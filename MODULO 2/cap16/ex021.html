@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+            
+            /* Define o padding de todas as direções, sempre na direção horária 
+                TOP -> RIGHT -> BOTTOM -> LEFT
+            */
+            padding: 10px;
+            
+            /* Deixa a caixa no meio da tela 
+                TOP -> RIGHT -> BOTTOM -> LEFT
+            */
+            margin: auto;
+
+            /* O outline é a linha de fora de uma caixa, ele fica após a borda e antes da margem */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+
+        p > a {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>
