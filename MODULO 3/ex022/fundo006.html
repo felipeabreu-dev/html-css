@@ -7,11 +7,23 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
+            
+             COVER - Cobrir a tela inteira
             background-size: cover;
-            background-repeat: no-repeat;
+
+             Vínculo com a tela FIXED - A imagem fica fixa / SCROLL - A imagem rola com a tela
+            background-attachment: fixed; */
+
+            /* Shorthand do background 
+                COLOR -> IMAGE -> POSITION -> REPEAT -> [SIZE] -> ATTACHMENT
+                O background-size não funciona no shorthand, então é necessário utilizá-lo sozinho
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
@@ -34,7 +46,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero assumenda cum quidem amet accusantium distinctio aliquid qui blanditiis, cumque vel hic dignissimos recusandae repellendus officiis consectetur molestias quisquam fugit.
         Inventore minus incidunt molestiae aperiam! Aliquid voluptas nostrum adipisci neque placeat optio libero? Praesentium, minus ab quidem unde dolor dignissimos ipsam? Eum recusandae ullam assumenda atque numquam illo omnis accusamus!
         Hic perferendis officia voluptate perspiciatis ab at doloribus beatae, accusantium dolores voluptatem dolore ratione, quasi ad quam repudiandae. Officiis ut eveniet asperiores officia mollitia unde magnam voluptate consequuntur excepturi eligendi!</p>
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero assumenda cum quidem amet accusantium distinctio aliquid qui blanditiis, cumque vel hic dignissimos recusandae repellendus officiis consectetur molestias quisquam fugit.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero assumenda cum quidem amet accusantium distinctio aliquid qui blanditiis, cumque vel hic dignissimos recusandae repellendus officiis consectetur molestias quisquam fugit.
         Inventore minus incidunt molestiae aperiam! Aliquid voluptas nostrum adipisci neque placeat optio libero? Praesentium, minus ab quidem unde dolor dignissimos ipsam? Eum recusandae ullam assumenda atque numquam illo omnis accusamus!
         Hic perferendis officia voluptate perspiciatis ab at doloribus beatae, accusantium dolores voluptatem dolore ratione, quasi ad quam repudiandae. Officiis ut eveniet asperiores officia mollitia unde magnam voluptate consequuntur excepturi eligendi!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero assumenda cum quidem amet accusantium distinctio aliquid qui blanditiis, cumque vel hic dignissimos recusandae repellendus officiis consectetur molestias quisquam fugit.
@@ -46,7 +58,7 @@
         Inventore minus incidunt molestiae aperiam! Aliquid voluptas nostrum adipisci neque placeat optio libero? Praesentium, minus ab quidem unde dolor dignissimos ipsam? Eum recusandae ullam assumenda atque numquam illo omnis accusamus!
         Hic perferendis officia voluptate perspiciatis ab at doloribus beatae, accusantium dolores voluptatem dolore ratione, quasi ad quam repudiandae. Officiis ut eveniet asperiores officia mollitia unde magnam voluptate consequuntur excepturi eligendi!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vero assumenda cum quidem amet accusantium distinctio aliquid qui blanditiis, cumque vel hic dignissimos recusandae repellendus officiis consectetur molestias quisquam fugit.
         Inventore minus incidunt molestiae aperiam! Aliquid voluptas nostrum adipisci neque placeat optio libero? Praesentium, minus ab quidem unde dolor dignissimos ipsam? Eum recusandae ullam assumenda atque numquam illo omnis accusamus!
-        Hic perferendis officia voluptate perspiciatis ab at doloribus beatae, accusantium dolores voluptatem dolore ratione, quasi ad quam repudiandae. Officiis ut eveniet asperiores officia mollitia unde magnam voluptate consequuntur excepturi eligendi!</p> -->
+        Hic perferendis officia voluptate perspiciatis ab at doloribus beatae, accusantium dolores voluptatem dolore ratione, quasi ad quam repudiandae. Officiis ut eveniet asperiores officia mollitia unde magnam voluptate consequuntur excepturi eligendi!</p>
     </main>
 </body>
 </html>
