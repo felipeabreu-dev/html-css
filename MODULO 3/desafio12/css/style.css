@@ -7,7 +7,8 @@
 
 :root {
     --fonte-padrao: "Sriracha", cursive;
-    --fonte-destaque: "Passion One", sans-serif;
+    --fonte-destaque: "Passion One", cursive;
+    --fonte-sem-serifa: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
@@ -29,6 +30,75 @@ header > h1 {
     font-size: 10vw;
 }
 
-header > p {
+header  p {
+    font-family: sans-serif;
     padding-bottom: 50px;
+}
+
+header a {
+    color: white;
+    font-family: var(--fonte-sem-serifa);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* CORPO DA PÁGINA */
+section {
+    padding: 10vh 0 10vh 30px;
+    line-height: 2em;
+    font-family: var(--fonte-padrao);
+    font-size: 3.5vw;
+}
+
+section.normal {
+    color: black;
+    background-color: white;
+}
+
+section.foto {
+    background-color: gray;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+section.foto > p {
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+
+/* RODAPÉ */
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-sem-serifa);
+    font-size: 1em;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
 }
