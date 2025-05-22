@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Minha página</h1>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic ullam corporis debitis accusantium quisquam dignissimos quam provident ea eveniet nostrum nulla, magnam nisi eius aut consequuntur! Commodi a vitae odit.
+    </p>
+
+
+    <!-- 
+        PROTEÇÃO DE IFRAMES
+        REFERRER POLICY - no-referrer: Não permite que a página que está acessando armazene informações do usuário (OBRIGATÓRIO)
+
+        SANDBOX - Define o que a página que está acessando poderá fazer.
+            sandbox: Não permite nada
+            allow-same-origin: Permite páginas de mesma origem fazerem tudo
+            allow-forms: Permite que a página que está acessando utilize formulários
+            allow-scripts: Permite apenas os scripts
+
+            https://www.w3schools.com/tags/att_iframe_sandbox.asp
+    -->
+    <iframe src="paginas-extras/pag05.html" frameborder="0" sandbox="allow-same-origin allow-scripts " referrerpolicy="no-referrer"></iframe>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus blanditiis ex, mollitia necessitatibus quod dolor sit beatae natus dolores quis unde assumenda odit tenetur nam facere iste dolorum aut voluptas.
+    </p>
+</body>
+</html>
