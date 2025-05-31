@@ -22,14 +22,22 @@
                     ambiente.
                 </p>
                 <form action="login.php">
-                    <input type="email" name="email" id="iemail" placeholder="Seu E-Mail" required>
-                    <input type="password" name="password" id="ipassword" placeholder="Sua Senha" required>
-                    <input type="submit" value="Entrar">
-                    <button type="button"><a href="esqueci.html">Esqueci a senha</a></button>
+                    <div class="campo">
+                        <label for="iemail"><i class="fa-regular fa-user"></i></label>
+                        <input type="email" name="email" id="iemail" placeholder="Seu E-Mail" required>
+                    </div>
+                    <div class="campo">
+                        <label for="ipassword"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" name="password" id="ipassword" placeholder="Sua Senha" required>
+                    </div>
+                    <input type="submit" value="Entrar" id="entrar">
+                    <a href="esqueci.html"><button type="button">Esqueci a senha</button></a>
                 </form>
             </div>
         </section>
     </main>
+
+    <script src="https://kit.fontawesome.com/217b7ea49f.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
