@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexible Box</title>
-</head>
-<style>
+    <title>Flexible Box</title><style>
 
     .container {
+        background-color: lightsalmon;
+
         display: flex;
+        flex-flow: row wrap;
+        /* Alinhamento Transversal com elementos encapsulados (WRAP) */
+        align-content: space-around;
+        height: 400px;
     }
 
     .item {
         background-color: lightskyblue;
         border: 1px solid black;
-        flex: auto;
         text-align: center;
+        padding: 40px;
     }
 </style>
+</head>
 <body>
     <div class="container">
         <div class="item">A</div>
@@ -27,6 +32,11 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
     </div>
 </body>
 </html>
